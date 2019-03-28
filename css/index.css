@@ -1,0 +1,61 @@
+/* 初始化 */
+body,ul,li,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    width: 570px;
+    height: 400px;
+    border: 10px solid black;
+    margin: 100px auto;
+}
+.main{
+    position: absolute;
+    left: -570px;
+    width: 4560px;
+    height: 400px;
+    font-size: 0;
+}
+.list{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -45px;
+    font-size: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius:11px;
+}
+.list li{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #aa72d2;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+.list .active{
+    background-color: orangered;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+#prev{
+    left: 0;
+}
+#next{
+    right: 0;
+}
